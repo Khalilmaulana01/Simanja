@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Simanja">
         <activity
+            android:name=".Home_Page"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.Simanja.NoActionBar"></activity>
+        <activity
             android:name=".LandingPage"
             android:label="@string/title_activity_landing_page"
-            android:theme="@style/Theme.Simanja.NoActionBar"></activity>
+            android:theme="@style/Theme.Simanja.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SIMANJA PIDIE"
+            android:textColor="@color/Green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/Green">
+
+        <TextView
+            android:id="@+id/tanggalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/jamTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Laporan Kegiatan"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/kegiatanFillTxt"
+            android:layout_width="370dp"
+            android:layout_height="160dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="fill_horizontal"
+            android:hint="Tulis disini..."
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/bereh"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/requCountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0/20"
+            android:layout_marginLeft="18dp"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/submitLaporanBtn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="200dp"
+            android:hint="Submit"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/submit_laporan"/>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@color/light_Grey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/kerja1_Txt"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Pilihan Kerja 1"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp">
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kerja2_Txt"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Pilihan Kerja 2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp">
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kerja3_Txt"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Pilihan Kerja 3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp">
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/kerja4_Txt"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pilihan Kerja 4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp">
+                    <CheckBox
+                        android:id="@+id/cb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/LayoutTelahAbsen"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/Light_Green">
+
+        <TextView
+            android:id="@+id/telahAbsenTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Anda Telah Absen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="70dp">
+
+        <Button
+            android:id="@+id/absenBtn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="200dp"
+            android:hint="Absen"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/submit_laporan"/>
+
+    </LinearLayout>
+
+</LinearLayout>
