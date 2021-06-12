@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/Splash"
+    android:background="@drawable/splash"
     tools:context=".MainActivity">
 
 
@@ -23,90 +23,101 @@
         android:textColor="@color/white"
         android:text="SIMANJA PIDIE"/>
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       android:gravity="center"
-       android:background="@drawable/warnabg">
-
-
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="MASUK"
-           android:layout_marginBottom="40dp"
-           android:layout_marginTop="0.9dp"
-           android:textStyle="bold"
-           android:textColor="@color/Green"
-           android:textSize="25dp"/>
-
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="70dp"
-        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/warnabg"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/bereh">
-        
+        android:orientation="vertical">
 
-
-        <EditText
-            android:layout_width="340dp"
+        <LinearLayout
+            android:layout_width="400dp"
             android:layout_height="60dp"
-            android:hint="NIP"
-            android:id="@+id/NIPTxt"
-            android:paddingLeft="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/grey"
-            android:background="@color/light_Grey"/>
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:src="@drawable/Gares"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.9dp"
+            android:text="MASUK"
+            android:textColor="@color/Green"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:src="@drawable/Gares"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bereh"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/NIPTxt"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:background="@color/light_Grey"
+                android:hint="NIP"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bereh"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/passwordTxt"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey" />
+
+            <ImageView
+                android:id="@+id/viewPassImg"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mata" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitLoginBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/warnasubmit"
+            android:hint="MASUK"
+            android:textColorHint="@color/white"
+            app:backgroundTint="#145F3E" />
+
+        <TextView
+            android:id="@+id/lupaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Lupa Password?" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="70dp"
-        android:padding="10dp"
-        android:gravity="center"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/bereh">
-
-
-
-        <EditText
-            android:layout_width="290dp"
-            android:layout_height="60dp"
-            android:hint="Password"
-            android:id="@+id/passwordTxt"
-            android:textColor="@color/grey"
-            android:textColorHint="@color/grey"
-            android:background="@android:color/transparent"/>
-
-        <ImageView
-            android:id="@+id/viewPassImg"
-            android:layout_width="30dp"
-            android:layout_height="20dp"
-            android:src="@drawable/mata"/>
-
-    </LinearLayout>
-
-       <Button
-           android:id="@+id/submitLoginBtn"
-           android:layout_width="150dp"
-           android:layout_height="wrap_content"
-           android:layout_marginBottom="10dp"
-           android:background="@drawable/warnasubmit"
-           android:hint="MASUK"
-           android:textColorHint="@color/white"
-           app:backgroundTint="#145F3E" />
-
-       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/lupaTxt"
-        android:text="Lupa Password?"/>
-
-   </LinearLayout>
-    </LinearLayout>
+</LinearLayout>
