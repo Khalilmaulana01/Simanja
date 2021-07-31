@@ -5,22 +5,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ProfilePage">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/green">
 
-        <RelativeLayout
+        <ImageView
+            android:id="@+id/imgBack"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            
+            android:layout_height="35dp"
+            android:layout_marginRight="350dp"
+            android:src="@drawable/back_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/circle">
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gantiProfilTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Profile"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:gravity="center">
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="75dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIP :"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/NipTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456123456"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:textSize="18dp"/>
 
 
-        </RelativeLayout>
-    </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="-3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat, Tanggal Lahir :"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/TTLTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01 Januari 1901"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ubahPwTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Password"
+            android:textColor="@color/green"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -39,20 +39,20 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="20dp"
-                android:src="@drawable/Gares"/>
+                android:src="@drawable/gares"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0.9dp"
             android:text="MASUK"
-            android:textColor="@color/Green"
+            android:textColor="@color/green"
             android:textSize="25dp"
             android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="20dp"
-                android:src="@drawable/Gares"/>
+                android:src="@drawable/gares"/>
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +98,7 @@
                 android:id="@+id/viewPassImg"
                 android:layout_width="30dp"
                 android:layout_height="20dp"
-                android:src="@drawable/mata" />
+                android:src="@drawable/mata"/>
 
         </LinearLayout>
 
