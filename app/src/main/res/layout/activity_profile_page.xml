@@ -25,19 +25,16 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:background="@drawable/circle">
-            <ImageView
-                android:id="@+id/profileImg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_img"/>
+
     </LinearLayout>
 
     <LinearLayout
