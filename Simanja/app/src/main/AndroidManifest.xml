@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Simanja">
-        <activity android:name=".home"></activity>
-        <activity android:name=".forget_password" />
+        <activity android:name=".Lupapassword"></activity>
+        <activity android:name=".home" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
