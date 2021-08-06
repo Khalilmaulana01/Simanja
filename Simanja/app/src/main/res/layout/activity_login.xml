@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@drawable/landing_page">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="145dp"
+        android:transitionName="logo_image"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="135dp"
+        android:src="@drawable/logo_pidie"/>
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:paddingBottom="80dp"
+        android:transitionName="logo_text"
+        android:text="SIMANJA PIDIE"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="19dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/loginbackground">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal">
+
+            <View android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="MASUK"
+                android:textColor="@color/green"
+                android:paddingLeft="40dp"
+                android:paddingRight="30dp"
+                android:paddingTop="3dp"
+                android:textSize="25dp" />
+
+            <View android:layout_width="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="290dp"
+            android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:id="@+id/username"
+            android:hint="NIP"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+             <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submitbuttoncolor"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="77dp"
+                android:layout_marginBottom="18dp"
+                android:hint="MASUK"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:id="@+id/lupabutton"
+                android:layout_width="170dp"
+                android:textSize="17dp"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:text="Lupa Password?"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/roboto_regular"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
