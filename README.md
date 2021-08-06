@@ -1,1 +1,0 @@
-#Asset_Simanja
