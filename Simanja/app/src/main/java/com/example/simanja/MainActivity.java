@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     //variableanimasi
     ImageView image;
     TextView logo;
-//    private TextView tombollupa;
 
     //waktu
     public static int SPLASH_SCREEN = 5000;
@@ -29,15 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
-
-//        tombollupa=findViewById(R.id.forgetbutton);
-//
-//        tombollupa.setOnClickListener(v -> {
-//            Intent lupapassword;
-//            lupapassword = new Intent(MainActivity.this,lupapassword.class);
-//            startActivity(lupapassword);
-//        });
+        setContentView(R.layout.activity_splashscreen);
 
 
         //Hooks
@@ -47,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this,Login.class);
+            finish();
 
 
             Pair[] pairs = new Pair[2];
@@ -62,4 +54,6 @@ public class MainActivity extends AppCompatActivity {
         },SPLASH_SCREEN );
 
     }
+
 }
+

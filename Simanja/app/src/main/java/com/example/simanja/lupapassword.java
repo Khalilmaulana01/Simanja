@@ -18,14 +18,11 @@ public class lupapassword extends AppCompatActivity {
 
 
         kembalilupabtn = findViewById(R.id.kembalilupabtn);
-        kembalilupabtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        kembalilupabtn.setOnClickListener(v -> {
 
-                Intent kembalilupabutt =new Intent (lupapassword.this, Login.class);
-                startActivity(kembalilupabutt);
-            }
-
+            Intent kembalilupabutt =new Intent (lupapassword.this, Login.class);
+            startActivity(kembalilupabutt);
+            finish();
         });
 
     }

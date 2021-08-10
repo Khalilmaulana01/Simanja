@@ -1,8 +1,10 @@
 package com.example.simanja;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,13 +22,15 @@ public class Login extends AppCompatActivity {
     
     lupabutton = findViewById(R.id.forgetbutton);
     lupabutton.setOnClickListener(new View.OnClickListener() {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public void onClick(View v) {
 
             Intent lupabutt =new Intent (Login.this, lupapassword.class);
             startActivity(lupabutt);
+
         }
     });
-    
+
     }
 }
