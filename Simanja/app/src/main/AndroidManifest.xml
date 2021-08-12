@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Simanja">
-        <activity android:name=".Lupapassword"></activity>
+        <activity android:name=".lupapassword"></activity>
         <activity android:name=".home" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="Simanja">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -12,6 +12,6 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
 
-        <item name="android:windowContentTransitions">true</item>
+
     </style>
 </resources>

@@ -18,7 +18,8 @@ public class lupapassword extends AppCompatActivity {
 
 
         kembalilupabtn = findViewById(R.id.kembalilupabtn);
-        kembalilupabtn.setOnClickListener(v -> {
+        kembalilupabtn.setOnClickListener(v ->
+        {
 
             Intent kembalilupabutt =new Intent (lupapassword.this, Login.class);
             startActivity(kembalilupabutt);
