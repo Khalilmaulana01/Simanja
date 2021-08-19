@@ -111,7 +111,7 @@
                 android:hint="MASUK"
                 android:textColorHint="@color/white"/>
             <TextView
-                android:id="@+id/lupabutton"
+                android:id="@+id/forgetbutton"
                 android:layout_width="170dp"
                 android:textSize="17dp"
                 android:layout_height="35dp"
